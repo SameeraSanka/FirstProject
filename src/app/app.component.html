@@ -3,9 +3,13 @@
 
 <mat-card appearance="outlined">
   <mat-card-header>
-    <mat-card-title>{{t1}}</mat-card-title>
-    <mat-card-subtitle>{{t2}}</mat-card-subtitle>
+    <mat-card-title>{{t1 | uppercase}}</mat-card-title>
+    <mat-card-subtitle>{{t2 | lowercase}}</mat-card-subtitle>
   </mat-card-header>
+  <h4>{{date | date:'dd/mm/yyyy'}}</h4>
+  <h6>{{salary | currency:'LKR'}}</h6>
+  <h5>{{_object | json}}</h5>
+  <h5>{{t1 | revers}}</h5>
   <mat-card-actions>
     <button mat-button>Learn More</button>
   </mat-card-actions>
